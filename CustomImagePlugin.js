@@ -8,7 +8,7 @@ const plugin = ({widgets, simulator, vehicle}) => {
     };
 
     const response =  await (await fetch('https://fowler1234.github.io/custom-plugins/plugin.html', options)).text();
-    //console.log(response);
+    console.log(response);
     
     container.innerHTML = (`
        <div style="max-width: fit-content; margin: 0 auto; position: relative;">
