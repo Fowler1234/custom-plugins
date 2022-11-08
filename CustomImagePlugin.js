@@ -50,15 +50,18 @@ const plugin = ({widgets, simulator, vehicle}) => {
     })
 
     return {
-        set_page: (page) => {
+        set_page: (text) => {
             if (boxGlobal !== null) {
-                if(page == "1"){
-                    boxGlobal.injectNode(page1)
-                }
-                if(page == "2"){
-                    boxGlobal.injectNode(page2)
-                }
-            }
+                    if text == "1" :
+                        boxGlobal.injectNode(page1)
+                    elif text == "2":
+                        boxGlobal.injectNode(page2)
+                    elif text == "3":
+                        boxGlobal.injectNode(page3)
+                    else:
+                        page0.querySelector(".smartphone-text").textContent = text
+                        boxGlobal.injectNode(page0)    
+             }
         }
     }
 }
