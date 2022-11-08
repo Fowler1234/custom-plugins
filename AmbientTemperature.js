@@ -28,6 +28,7 @@ const TemperatureTile = (isAirConOn, initialTemperature, finalTemperature) => {
                 signalValueEl.textContent = initialTemperature
             } else {
                 throw new Error(`div couldn't be found.`)
+            }
         }, 300)
 
         box.injectNode(div)
