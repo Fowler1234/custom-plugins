@@ -42,7 +42,7 @@ const plugin = ({widgets, simulator, vehicle}) => {
 
     widgets.register("CustomImage", (box) => {
         boxGlobal = box
-        box.injectNode(page1)
+        box.injectNode(page0)
         return () => {
             boxGlobal = null
             // Deactivation function for clearing intervals or such.
@@ -52,16 +52,20 @@ const plugin = ({widgets, simulator, vehicle}) => {
     return {
         set_page: (text) => {
             if (boxGlobal !== null) {
-                    if text == "1" :
+                    if (text == "1"){
                         boxGlobal.injectNode(page1)
-                    elif text == "2":
+                    }
+                    else if (text == "2"){
                         boxGlobal.injectNode(page2)
-                    elif text == "3":
+                    }
+                    else if(text == "3"){
                         boxGlobal.injectNode(page3)
-                    else:
+                    }
+                    else{
                         page0.querySelector(".smartphone-text").textContent = text
-                        boxGlobal.injectNode(page0)    
-             }
+                        boxGlobal.injectNode(page0)   
+                    }
+            }
         }
     }
 }
