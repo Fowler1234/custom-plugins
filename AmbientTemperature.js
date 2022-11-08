@@ -1,7 +1,8 @@
-const TemperatureTile = (isAirConOn, initialTemperature, finalTemperature) => {
+const TemperatureTile = (vssSignal, initialTemperature, finalTemperature, vehicle) => {
     return (box) => {
         const div = document.createElement("div")
         const label = 'AirTemperature'
+        var currentTemperature = initialTemperature
 
         div.innerHTML = (`
         <style>
@@ -14,7 +15,7 @@ const TemperatureTile = (isAirConOn, initialTemperature, finalTemperature) => {
         }
         </style>
         <div style="height: 100%; display: flex; flex-direction: column;">
-            <div style="display: flex; flex-direction: column; height: 100%; background-color: rgb(31 41 55); color: white; padding: 35px 20px; user-select: none; align-items: center;" data-signal="${isAirConOn}">
+            <div style="display: flex; flex-direction: column; height: 100%; background-color: rgb(103 156 146); color: white; padding: 35px 20px; user-select: none; align-items: center;" data-signal="${vssSignal}">
                 <div style="margin-bottom: 10px;font-size: 1.1em;font-weight: bold;margin-top: auto;overflow: hidden;text-overflow: ellipsis;width: fit-content; max-width: 100%;" title="${label}">${label}</div>
                 <div style="font-size: 1.1em; margin-bottom: 25px;" class="signal-value"><span></span> °C</div>
                 <div style="margin-top: auto;"><i style="font-size: 3em;" class="fa-solid fa-temperature-half"></i></div>
@@ -23,8 +24,17 @@ const TemperatureTile = (isAirConOn, initialTemperature, finalTemperature) => {
         `)
 
         const intervalId = setInterval(async () => {
-            const signalValueEl = div.querySelector(`[data-signal="${isAirConOn}"] .signal-value > span`)
-            if (signalValueEl !== null) {
+            const strippedApi = vssSignal.split(".").slice(1).join(".")
+            const isAirConOn = await vehicle[strippedApi].get()
+            const signalValueEl = div.querySelector(`[data-signal="${vssSignal}"] .signal-value > span`)
+            if(isAirConOn && signalValueEl !== null) {
+                signalValueEl.textContent = currentTemperature
+                if(currentTemperature > finalTemperature - 2) {
+                    currentTemperature -= 2
+                }
+
+            }
+            if (!isAirConOn && signalValueEl !== null) {
                 signalValueEl.textContent = initialTemperature
             } else {
                 throw new Error(`div couldn't be found.`)
@@ -57,9 +67,10 @@ const loadScript = (boxWindow, url) => {
 }
 
 const plugin = ({widgets, simulator, vehicle}) => {
+    console.log(vehicle)
     widgets.register(
         "TemperatureTile",
-        TemperatureTile("Vehicle.Cabin.HVAC.IsAirConditioningActive", 35, 25)
+        TemperatureTile("Vehicle.Cabin.HVAC.IsAirConditioningActive", 35, 25, vehicle)
     )
 }
 
