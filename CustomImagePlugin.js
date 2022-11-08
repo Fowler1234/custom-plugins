@@ -7,11 +7,10 @@ const plugin = ({widgets, simulator, vehicle}) => {
     headers: {}
     };
 
-    const response =  await (await fetch('https://fowler1234.github.io/custom-plugins/plugin.html', options)).text();
-    console.log(response);
+    //const response =  await (await fetch('https://fowler1234.github.io/custom-plugins/plugin.html', options)).text();
+    //console.log(response);
     
     container.innerHTML = (`
-        <script>console.log("Hello World!!!")</script>
        <div style="max-width: fit-content; margin: 0 auto; position: relative;">
 	     <h1 class="smartphone-text" style="color: red; font-family: 'Lato'; width: 100%;height: 100%; box-sizing: border-box; padding-top: 25px; padding-right: 12px; padding-left: 12px; padding-bottom: 25px;">
           Welcome, Carla!!
