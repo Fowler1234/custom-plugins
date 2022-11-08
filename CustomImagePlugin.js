@@ -52,10 +52,10 @@ const plugin = ({widgets, simulator, vehicle}) => {
     return {
         set_page: (page) => {
             if (boxGlobal !== null) {
-                if(text == "1"){
+                if(page == "1"){
                     boxGlobal.injectNode(page1)
                 }
-                if(text == "2"){
+                if(page == "2"){
                     boxGlobal.injectNode(page2)
                 }
             }
