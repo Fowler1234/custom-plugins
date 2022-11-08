@@ -89,7 +89,7 @@ const plugin = ({widgets, simulator, vehicle}) => {
                         boxGlobal.injectNode(page3)
                     }
                     else{
-                        page0.querySelector(".smartphone-text").textContent = text
+                        page0.querySelector(".driver-update").textContent = text
                         boxGlobal.injectNode(page0)   
                     }
             }
