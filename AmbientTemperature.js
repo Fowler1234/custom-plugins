@@ -36,7 +36,7 @@ const TemperatureTile = (vssSignal, initialTemperature, finalTemperature, vehicl
             } else {
                 throw new Error(`div couldn't be found.`)
             }
-        }, 500)
+        }, 1000)
 
         box.injectNode(div)
 
