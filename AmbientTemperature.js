@@ -27,7 +27,7 @@ const TemperatureTile = (vssSignal, initialTemperature, finalTemperature, vehicl
             const strippedApi = vssSignal.split(".").slice(1).join(".")
             const isAirConOn = await vehicle[strippedApi].get()
             const signalValueEl = div.querySelector(`[data-signal="${vssSignal}"] .signal-value > span`)
-            if(isAirConOn && signalValueEl !== null && currentTemperature > finalTemperature) {
+            if(isAirConOn && signalValueEl !== null && currentTemperature >= finalTemperature) {
                 signalValueEl.textContent = currentTemperature
                 currentTemperature -= 1
             }
