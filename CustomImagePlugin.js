@@ -7,7 +7,7 @@ const plugin = ({widgets, simulator, vehicle}) => {
     headers: {}
     };
 
-    //const response =  await (await fetch('https://fowler1234.github.io/custom-plugins/plugin.html', options)).text();
+    const response =  await (await fetch('https://fowler1234.github.io/custom-plugins/plugin.html', options)).text();
     //console.log(response);
     
     container.innerHTML = (`
