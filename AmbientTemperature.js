@@ -27,12 +27,9 @@ const TemperatureTile = (vssSignal, initialTemperature, finalTemperature, vehicl
             const strippedApi = vssSignal.split(".").slice(1).join(".")
             const isAirConOn = await vehicle[strippedApi].get()
             const signalValueEl = div.querySelector(`[data-signal="${vssSignal}"] .signal-value > span`)
-            if(isAirConOn && signalValueEl !== null) {
+            if(isAirConOn && signalValueEl !== null && currentTemperature > finalTemperature - 2) {
                 signalValueEl.textContent = currentTemperature
-                if(currentTemperature > finalTemperature - 2) {
-                    currentTemperature -= 2
-                }
-
+                currentTemperature -= 2
             }
             if (!isAirConOn && signalValueEl !== null) {
                 signalValueEl.textContent = initialTemperature
@@ -67,7 +64,9 @@ const loadScript = (boxWindow, url) => {
 }
 
 const plugin = ({widgets, simulator, vehicle}) => {
+    console.log("---------vehicle object---------------")
     console.log(vehicle)
+    console.log("---------vehicle object---------------")
     widgets.register(
         "TemperatureTile",
         TemperatureTile("Vehicle.Cabin.HVAC.IsAirConditioningActive", 35, 25, vehicle)
