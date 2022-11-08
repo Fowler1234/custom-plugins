@@ -1,4 +1,18 @@
 const plugin = ({widgets, simulator, vehicle}) => {
+        const page0 = document.createElement("div")
+        page0.setAttribute("style", `height: 100%; width: 100%; background-color: #679c92`)
+        page0.innerHTML = (`
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <div class="text-center p-5" style="margin: 70px;">
+        <br>
+        <br>
+        <img class="mb-4" src="https://raw.githubusercontent.com/Fowler1234/custom-plugins/5ab2ed07bd3d7ea7b5102b7588b3b5e9157726f3/logo_safe_max_2.png" height="110" width="110" alt="SafetyMax">
+        <h3 class="driver-update" style="color: black; backgroundColor: '#679c92' font-family: 'Lato'; box-sizing: border-box; padding-top: 25px; padding-right: 12px; padding-left: 12px; padding-bottom: 25px;">
+            ...
+        </h3>
+        </div>
+        `);
+        
         const page1 = document.createElement("div")
         page1.setAttribute("style", `height: 100%; width: 100%; background-color: #679c92`)
         page1.innerHTML = (`
