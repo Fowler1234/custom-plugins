@@ -8,9 +8,14 @@ const plugin = ({widgets, simulator, vehicle}) => {
 		  <h1 class="smartphone-text" style="color: red; font-family: 'Lato'; box-sizing: border-box; padding-top: 25px; padding-right: 12px; padding-left: 12px; padding-bottom: 25px;">
 		Welcome, Carla!!
 	      </h1>
-	<button onclick="alert('Hello World!');">Click me 2</button>
+	<div id="red">Click me 2</button>
 	</div>
     `);
+	
+    let ourButton = container.querySelector("#red");
+    ourButton.onclick = () => {
+	    ourButton.style.backgroundColor = "blue";
+    }
 
     let boxGlobal = null
 
