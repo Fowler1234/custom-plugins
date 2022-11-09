@@ -44,9 +44,9 @@ const plugin = ({widgets, simulator, vehicle}) => {
     <div class="text-center p-5" style="margin: 70px;">
     <br>
     <br>
-    <h2 class="smartphone-text" style="color: white; backgroundColor: '#679c92' font-family: 'Lato'; box-sizing: border-box;">
+    <h3 class="smartphone-text" style="color: white; backgroundColor: '#679c92' font-family: 'Lato'; box-sizing: border-box;">
         Take a minute to relax before you drive.
-        </h2>
+        </h3>
 
     <div class="container" style="z-index: 9999;">
         <div class="circle"></div>
@@ -68,9 +68,9 @@ const plugin = ({widgets, simulator, vehicle}) => {
     <br>
     <br>
     <br>
-    <h2 class="smartphone-text" style="color: white; backgroundColor: '#679c92' font-family: 'Lato'; box-sizing: border-box;">
+    <h3 class="smartphone-text" style="color: white; backgroundColor: '#679c92' font-family: 'Lato'; box-sizing: border-box;">
        Have a safe drive!
-    </h2>
+    </h3>
     </div>
     `);
     
