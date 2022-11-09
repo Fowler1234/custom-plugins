@@ -3,15 +3,11 @@ const plugin = ({widgets, simulator, vehicle}) => {
     page0.setAttribute("style", `height: 100%; width: 100%; background-color: #679c92`)
     page0.innerHTML = (`
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
     <div class="text-center p-5" style="margin: 70px;">
     <div style="border-radius: 0 0 15px 15px; background-color: #4b756d; margin-top: -70px">
             <img class="mb-4" src="https://raw.githubusercontent.com/Fowler1234/custom-plugins/5ab2ed07bd3d7ea7b5102b7588b3b5e9157726f3/logo_safe_max_2.png" height="110" width="110" alt="SafeMax">
-            <h3 style="padding-bottom: 20px;margin:-20px;font-family: 'Staatliches', cursive;color:white">SAFEMAX</h3>
+            <h3 style="padding-bottom: 20px;margin:-20px;font-family: 'Copperplate', cursive;color:white">SafeMax</h3>
     </div>
-
 
     <h3 class="driver-update" style="color: white; backgroundColor: '#679c92' font-family: 'Lato'; box-sizing: border-box; padding-top: 25px; padding-right: 12px; padding-left: 12px; padding-bottom: 25px;">
         Driver detected
