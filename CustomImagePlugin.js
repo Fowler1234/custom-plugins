@@ -12,7 +12,7 @@ const plugin = ({widgets, simulator, vehicle}) => {
 
 
     <h3 class="driver-update" style="color: black; backgroundColor: '#679c92' font-family: 'Lato'; box-sizing: border-box; padding-top: 25px; padding-right: 12px; padding-left: 12px; padding-bottom: 25px;">
-        ...
+        Driver detected
     </h3>
     </div>
     `);
@@ -27,7 +27,7 @@ const plugin = ({widgets, simulator, vehicle}) => {
         <h3 style="padding-bottom: 20px;margin:-20px;font-family: 'Copperplate', cursive;color:white">SafeMax</h3>
         </div>
         <h1 class="smartphone-text" style="color: black; backgroundColor: '#679c92' font-family: 'Lato'; box-sizing: border-box; padding-top: 25px; padding-right: 12px; padding-left: 12px; padding-bottom: 25px;">
-            Welcome, Carla!!
+            Welcome, Carla!
         </h1>
     </div>
   
@@ -43,7 +43,7 @@ const plugin = ({widgets, simulator, vehicle}) => {
     <br>
     <br>
     <h2 class="smartphone-text" style="color: black; backgroundColor: '#679c92' font-family: 'Lato'; box-sizing: border-box;">
-        You seem nervous today ... do you mind a meditation?
+        Take a minute to relax before you drive.
         </h2>
 
     <div class="container" style="z-index: 9999;">
@@ -67,7 +67,7 @@ const plugin = ({widgets, simulator, vehicle}) => {
     <br>
     <br>
     <h2 class="smartphone-text" style="color: black; backgroundColor: '#679c92' font-family: 'Lato'; box-sizing: border-box;">
-       Happy Driving ...
+       Have a safe drive!
     </h2>
     </div>
     `);
