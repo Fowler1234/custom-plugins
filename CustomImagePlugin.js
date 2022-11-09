@@ -7,7 +7,7 @@ const plugin = ({widgets, simulator, vehicle}) => {
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
     <div class="text-center p-5" style="margin: 70px;">
-    <div style="border-radius: 0 0 15px 15px; background-color: #4b756d">
+    <div style="border-radius: 0 0 15px 15px; background-color: #4b756d; margin-top: -70px">
             <img class="mb-4" src="https://raw.githubusercontent.com/Fowler1234/custom-plugins/5ab2ed07bd3d7ea7b5102b7588b3b5e9157726f3/logo_safe_max_2.png" height="110" width="110" alt="SafeMax">
             <h3 style="padding-bottom: 20px;margin:-20px;font-family: 'Staatliches', cursive;color:white">SAFEMAX</h3>
     </div>
