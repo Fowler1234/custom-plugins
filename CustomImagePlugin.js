@@ -11,7 +11,7 @@ const plugin = ({widgets, simulator, vehicle}) => {
     </div>
 
 
-    <h3 class="driver-update" style="color: black; backgroundColor: '#679c92' font-family: 'Lato'; box-sizing: border-box; padding-top: 25px; padding-right: 12px; padding-left: 12px; padding-bottom: 25px;">
+    <h3 class="driver-update" style="color: white; backgroundColor: '#679c92' font-family: 'Lato'; box-sizing: border-box; padding-top: 25px; padding-right: 12px; padding-left: 12px; padding-bottom: 25px;">
         Driver detected
     </h3>
     </div>
@@ -26,7 +26,7 @@ const plugin = ({widgets, simulator, vehicle}) => {
         <img class="mb-4" src="https://raw.githubusercontent.com/Fowler1234/custom-plugins/5ab2ed07bd3d7ea7b5102b7588b3b5e9157726f3/logo_safe_max_2.png" height="110" width="110" alt="SafeMax">
         <h3 style="padding-bottom: 20px;margin:-20px;font-family: 'Copperplate', cursive;color:white">SafeMax</h3>
         </div>
-        <h1 class="smartphone-text" style="color: black; backgroundColor: '#679c92' font-family: 'Lato'; box-sizing: border-box; padding-top: 25px; padding-right: 12px; padding-left: 12px; padding-bottom: 25px;">
+        <h1 class="smartphone-text" style="color: white; backgroundColor: '#679c92' font-family: 'Lato'; box-sizing: border-box; padding-top: 25px; padding-right: 12px; padding-left: 12px; padding-bottom: 25px;">
             Welcome, Carla!
         </h1>
     </div>
@@ -42,7 +42,7 @@ const plugin = ({widgets, simulator, vehicle}) => {
     <div class="text-center p-5" style="margin: 70px;">
     <br>
     <br>
-    <h2 class="smartphone-text" style="color: black; backgroundColor: '#679c92' font-family: 'Lato'; box-sizing: border-box;">
+    <h2 class="smartphone-text" style="color: white; backgroundColor: '#679c92' font-family: 'Lato'; box-sizing: border-box;">
         Take a minute to relax before you drive.
         </h2>
 
@@ -66,7 +66,7 @@ const plugin = ({widgets, simulator, vehicle}) => {
     <br>
     <br>
     <br>
-    <h2 class="smartphone-text" style="color: black; backgroundColor: '#679c92' font-family: 'Lato'; box-sizing: border-box;">
+    <h2 class="smartphone-text" style="color: white; backgroundColor: '#679c92' font-family: 'Lato'; box-sizing: border-box;">
        Have a safe drive!
     </h2>
     </div>
